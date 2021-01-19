@@ -23,5 +23,6 @@ It is a bit complicated but soon we plan to do it automatically with Github Acti
 npm run release:beta && npm run build
 cp -r package.json dist/src
 
-npm publish dist/src --registry http://217.182.168.167:4873
+cd dist/src
+npm publish --registry http://217.182.168.167:4873
 ```

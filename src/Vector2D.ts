@@ -1,5 +1,3 @@
 export default class Vector {
-    public x = 0;
-
-    public y = 0;
+  constructor(public x: number, public y: number) {}
 }
