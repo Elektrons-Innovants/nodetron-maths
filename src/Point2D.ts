@@ -1,4 +1,9 @@
-export default class Point {
+export interface IPoint {
+  x: number,
+  y: number,
+}
+
+export default class Point implements IPoint {
   constructor(public x: number, public y: number) {}
 
   public distance(p: Point) : number {
