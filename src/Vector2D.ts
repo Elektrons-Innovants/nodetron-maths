@@ -3,6 +3,6 @@ export interface IVector {
   y: number,
 }
 
-export default class Vector implements IVector {
+export class Vector implements IVector {
   constructor(public x: number, public y: number) {}
 }

@@ -1,4 +1,4 @@
-import Point from '../Point2D'
+import { Point } from '../Point2D'
 
 describe('Point class', () => {
   test('Point constructor', () => {

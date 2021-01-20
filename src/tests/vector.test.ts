@@ -1,5 +1,4 @@
-import Circle from '../Circle'
-import Vector from '../Vector2D'
+import { Vector } from '../Vector2D'
 
 describe('Vector class', () => {
   test('Vector constructor', () => {

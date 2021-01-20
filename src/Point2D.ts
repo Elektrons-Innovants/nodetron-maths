@@ -3,7 +3,7 @@ export interface IPoint {
   y: number,
 }
 
-export default class Point implements IPoint {
+export class Point implements IPoint {
   constructor(public x: number, public y: number) {}
 
   public distance(p: Point) : number {
