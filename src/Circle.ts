@@ -1,11 +1,11 @@
-import { Point, IPoint } from './Point2D'
+import { Point, AbstractPoint } from './Point2D'
 
-export interface ICircle {
-  center: IPoint,
+export interface AbstractCircle {
+  center: AbstractPoint,
   radius: number,
 }
 
-export class Circle implements ICircle {
+export class Circle implements AbstractCircle {
   public center: Point;
 
   constructor(x: number, y: number, public radius: number) {

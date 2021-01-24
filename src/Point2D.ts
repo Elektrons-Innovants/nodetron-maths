@@ -1,9 +1,9 @@
-export interface IPoint {
+export interface AbstractPoint {
   x: number,
   y: number,
 }
 
-export class Point implements IPoint {
+export class Point implements AbstractPoint {
   constructor(public x: number, public y: number) {}
 
   public distance(p: Point) : number {
