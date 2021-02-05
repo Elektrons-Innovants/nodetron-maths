@@ -1,18 +1,17 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
   "env": {
     "mocha": true,
     "node": true
   },
+  "ignorePatterns": ["jest.config.js"],
   "parserOptions": {
     "project": "./tsconfig.json",
-    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "airbnb-base",
     "plugin:import/errors",
@@ -37,14 +36,8 @@
         }
       }
     ],
-    "semi": [
-      "error",
-      "never"
-    ],
-    "import/extensions": [
-      "error",
-      "never"
-    ],
+    "semi": ["error", "never"],
+    "import/extensions": ["error", "never"],
     "no-param-reassign": 0,
     "import/order": [
       "error",
@@ -76,10 +69,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "./test/**/*.ts",
-          "./database/**/*.ts"
-        ]
+        "devDependencies": ["./test/**/*.ts", "./database/**/*.ts"]
       }
     ],
     "max-len": [
