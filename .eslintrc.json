@@ -84,6 +84,7 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "no-useless-constructor": "off"
+    "no-useless-constructor": "off",
+    "class-methods-use-this": "off"
   }
 }
