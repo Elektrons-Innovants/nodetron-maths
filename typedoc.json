@@ -1,0 +1,9 @@
+{
+    "entryPoints": [
+        "src/Vector2D.ts",
+        "src/Circle.ts",
+        "src/Point2D.ts"
+    ],
+    "out": "docs"
+  }
+  

@@ -1,8 +1,9 @@
 # Node
 node_modules
 
-# Typescript
+# Typescript + Documentation
 dist/
+docs/
 
 # Environment
 *.env
