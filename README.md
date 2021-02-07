@@ -2,7 +2,7 @@
 
 > :warning: **This library is in beta**: We can do breaking change every release.
 
-This library is to create a minimal mathematical library for our Robocup SSL Teams (NAELIC).
+This library is to create a minimal mathematical 2D library for our Robocup SSL Teams (NAELIC).
 
 ## How to install it ?
 
@@ -17,12 +17,22 @@ npm install @nodetron/math --registry http://217.182.168.167:4873
 
 ## Publish on verdaccio
 
-It is a bit complicated but soon we plan to do it automatically with Github Actions.
+It is a bit complicated but soon we plan to do it automatically with CI.
 
 ```bash
-npm run release:beta && npm run build
+npm run build
 cp -r package.json dist/src
 
 cd dist/src
 npm publish --registry http://217.182.168.167:4873
 ```
+
+## Documentation
+
+We use the specification [tsdoc](https://tsdoc.org/) and the generation documentation tools [TypeDoc](https://typedoc.org/) to document our project.
+
+### How to produce and see it ?
+
+> npm run doc
+
+The docs is created, open docs/index.html to see it.
