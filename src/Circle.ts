@@ -29,12 +29,12 @@ export class Circle implements AbstractCircle {
   }
 
   /**
-   * See if a point is inside in the circle.
+   * See if a point is inside the circle.
    *
-   * @param p The point to know if he is inside the circle.
-   * @return Result if it's inside in the circle.
+   * @param p The point to know if the circle contains its.
+   * @return Result if it's inside the circle.
    */
-  public isInside(p : Point) : boolean {
+  public contains(p : Point) : boolean {
     return this.center.distance(p) <= this.radius
   }
 }

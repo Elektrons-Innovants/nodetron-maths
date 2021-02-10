@@ -27,7 +27,7 @@ describe('Circle class', () => {
     ]
 
     points.forEach((point) => {
-      expect(circ.isInside(point)).toBe(true)
+      expect(circ.contains(point)).toBe(true)
     })
   })
 
@@ -44,7 +44,7 @@ describe('Circle class', () => {
     ]
 
     points.forEach((point) => {
-      expect(circ.isInside(point)).toBe(false)
+      expect(circ.contains(point)).toBe(false)
     })
   })
 })
