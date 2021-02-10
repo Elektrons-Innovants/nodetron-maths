@@ -2,7 +2,7 @@ import { Circle } from '../circle'
 import { Point } from '../point2D'
 
 describe('Circle class', () => {
-  test('Circle constructor', () => {
+  test('Circle - Constructor', () => {
     const circ = new Circle(1, 2, 5)
 
     expect(circ.center.x).toBe(1)
