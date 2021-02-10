@@ -1,5 +1,5 @@
-import { Circle } from '../Circle'
-import { Point } from '../Point2D'
+import { Circle } from '../circle'
+import { Point } from '../point2D'
 
 describe('Circle class', () => {
   test('Circle constructor', () => {

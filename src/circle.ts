@@ -1,4 +1,4 @@
-import { Point, AbstractPoint } from './Point2D'
+import { Point, AbstractPoint } from './point2D'
 
 export interface AbstractCircle {
   /**

@@ -1,4 +1,4 @@
-import { Vector } from '../Vector2D'
+import { Vector } from '../vector2D'
 
 describe('Vector - constructor', () => {
   test('1, 2', () => {
