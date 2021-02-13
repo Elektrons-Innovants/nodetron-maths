@@ -44,15 +44,28 @@ export class Vector implements AbstractVector {
     }
   }
 
+  /**
+   * Get the angle of the vector in the unit circle.
+   *
+   * @returns the angle of the vector in the unit circle.
+   */
   public angle(): Angle {
     return Vector.vector2angle(this)
   }
 
+  /**
+   * Get the angle of the vector in the unit circle.
+   *
+   * @params vector to compute the angle in the unit circle.
+   *
+   * @returns the angle of the vector in the unit circle.
+   */
   public static vector2angle(direction: Vector): Angle {
-    if (direction.norm() === 0.0) return new Angle(0.0)
+    const norm = direction.norm()
+    if (norm === 0.0) return new Angle(0.0)
 
-    direction.normalized()
-    let res = Math.acos(direction.x)
+    const x = direction.x / norm
+    let res = Math.acos(x)
     if (direction.y < 0) res = -res
     return new Angle(res)
   }
