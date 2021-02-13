@@ -1,3 +1,5 @@
+import { Angle } from './angle'
+
 export interface AbstractVector {
   /**
    * x-coordinate in 2D plan.
@@ -40,5 +42,18 @@ export class Vector implements AbstractVector {
       this.x /= norm
       this.y /= norm
     }
+  }
+
+  public angle(): Angle {
+    return Vector.vector2angle(this)
+  }
+
+  public static vector2angle(direction: Vector): Angle {
+    if (direction.norm() === 0.0) return new Angle(0.0)
+
+    direction.normalized()
+    let res = Math.acos(direction.x)
+    if (direction.y < 0) res = -res
+    return new Angle(res)
   }
 }
